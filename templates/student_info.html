@@ -7,9 +7,10 @@
 <h1>{{ first }} {{ last }}</h1>
 
 <p>GitHub Account: {{ github }}</p>
-<p>{% for grade_tuple in student_grades2 %}
-    Project:{{grade_tuple[0]}} Grade: {{grade_tuple[1]}}<br>
+
+<ul>{% for grade_tuple in student_grades2 %}
+    <li>Project:{{grade_tuple[0]}} Grade: {{grade_tuple[1]}}</li><br>
     {% endfor %}
-</p>
+</ul>
 </body>
 </html>
